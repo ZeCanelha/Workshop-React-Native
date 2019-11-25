@@ -39,7 +39,7 @@ export default PickerBasics;
 TODO: Selecionar um elemento do picker e mostrar a imagem correspondente.
        https://facebook.github.io/react-native/docs/picker
 
-       OnValueChange()
+       OnValueChange(). Actualizar o estado para o nome da imagem e mostrar a imagem correspondente.
 
 
 
