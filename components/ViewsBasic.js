@@ -21,15 +21,15 @@ const styles = StyleSheet.create({
     container:{
         alignItems: "center",
         justifyContent: "center",
-        //flexDirection: "row",
+        flexDirection: "row",
         // 1º caso
-        // flex: 1
+        flex: 1
     },
     boxBlue: {
         width: 50,
         height: 50,
         backgroundColor: "blue",
-        //flex: 1
+        flex: 1
     },
     boxRed: {
         width: 50,

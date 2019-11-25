@@ -1,35 +1,59 @@
-import React, { Component } from "react";
-import {
-    View,
-    Image,
-    StyleSheet,
-    Picker
-} from 'react-native';
+import React from 'react';
+import {Component} from 'react';
+import { StyleSheet, Text, View, Picker, Image } from 'react-native';
 
 class PickerBasics extends Component {
     constructor(props){
-        this.state:{
-            favPet:''
-            }
+        super(props)
+        this.state = {favPet: "",  uri: images.frog, valueSelected: false};
+        this.onValueChange = this.onValueChange.bind(this)
     }
-    const styles = StyleSheet.create({
-        container: {
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center"
+
+    onValueChange(petName)
+    {
+        switch (petName) {
+            case "frog":
+                this.setState({uri: images.frog, valueSelected: true, favPet: petName})
+                break;
+            case "rhino":
+                this.setState({uri: images.rhino, valueSelected: true ,favPet: petName})
+                break;
+            case "snail":
+                this.setState({uri: images.snail,valueSelected: true , favPet: petName})
+                break;
+            default:
+                break;
         }
-    })
+    
+    }
+
     render(){
         return(
-            <View>
-                <Picker selectedValue={this.state.favPet}  >
+            <View style={styles.container}>
+                <Text>Select your favorite pet!</Text>
+                <Picker selectedValue={this.state.favPet} onValueChange={this.onValueChange}  >
                     <Picker.Item label = "Frog" value = "frog" />
                     <Picker.Item label = "Snail" value = "snail" />
                     <Picker.Item label = "Rhino" value = "rhino" />
                 </Picker>
+                { this.state.valueSelected ? <View><Text> There you go! Here is your favorite pet!</Text><Image source={this.state.uri} /></View>: null}
+                 
+    
             </View>
-        )
+        );
     }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        margin: 40
+    }, images: { width: 50, height: 50}
+});
+
+const images = {
+    frog: require('../assets/frog.png'),
+    snail: require('../assets/snail.png'),
+    rhino: require('../assets/rhino.png')
 }
 
 export default PickerBasics;
