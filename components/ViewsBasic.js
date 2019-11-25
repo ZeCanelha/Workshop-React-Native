@@ -47,8 +47,13 @@ const styles = StyleSheet.create({
 
 export default ViewsBasic;
 
-
 /* 
+
+TODO: 
+    Default modelo de apresentação dos componentes (Flexbox): Falar do modelo flexbox
+            Inline style não aconselhado
+            Criar uma StyleSheet
+        
 class ViewsBasic extends Component {
     render() {
         return (
