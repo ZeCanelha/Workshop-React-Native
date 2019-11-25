@@ -6,7 +6,8 @@ For this workshop the participants must have instaleld the following software
 
 * [Node.js](https://nodejs.org/en/download/) - Download and install Node.js
 * [Expo.io](https://expo.io) - To deploy our code in native Android, IOS or webapps with the same JavaScript code
-* [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAiAzuPuBRAIEiwAkkmOSHUNREDnaGWzkdLfDnKSbbnwJ6ZyoLhFGYLjJVtiiflmtPtCjAZQZRoCUJIQAvD_BwE) - Download and install Android Studio
+* [Android Studio](https://developer.android.com/studio/?gclid=CjwKCAiAzuPuBRAIEiwAkkmOSHUNREDnaGWzkdLfDnKSbbnwJ6ZyoLhFGYLjJVtiiflmtPtCjAZQZRoCUJIQAvD_BwE) - For an android emulator ( Optional )
+* [Expo Client](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US) - To run the code in your device
 * [VSCode](https://code.visualstudio.com/download) - Optional
 
 ## Installing

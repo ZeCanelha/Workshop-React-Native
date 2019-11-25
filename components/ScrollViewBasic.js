@@ -3,7 +3,25 @@ import {
     ScrollView, Image, StyleSheet, View, Text, FlatList
   } from "react-native";
  
- export default class ScrollViewBasic extends Component {
+class ScrollViewBasic extends Component {
+
+     render(){
+         return(
+             <View>
+                <Text>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                   Similique aspernatur earum sit harum, impedit ipsam dicta tempore. 
+                   Odit temporibus corporis vitae magnam dolores, vero reprehenderit eum labore dolore, ex iste.
+                </Text>
+             </View>
+         )
+     }
+ }
+
+
+ /*
+
+  export default class ScrollViewBasic extends Component {
 
      render(){
          return(
@@ -63,9 +81,6 @@ import {
     
  });
 
-
- /*
-
  TODO: 
  Add: 
 
@@ -76,19 +91,6 @@ import {
     ScrollView vs FlatList: ScrollView renderiza todos os childs elements.
     FlatList: Lazyload, renderiza á medida que os componentes vão aparecendo no ecrã. 
 
+    
+*/
 
-  class ScrollViewBasic extends Component {
-
-     render(){
-         return(
-             <ScrollView>
-                <Text>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                   Similique aspernatur earum sit harum, impedit ipsam dicta tempore. Odit temporibus corporis vitae magnam dolores, vero reprehenderit eum labore dolore, ex iste.
-                </Text>
-             </ScrollView>
-         )
-     }
- }
-
- */
