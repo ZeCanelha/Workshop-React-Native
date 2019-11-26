@@ -2,7 +2,8 @@ import React from "react";
 import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-        
+// Docs: https://facebook.github.io/react-native/docs/flexbox
+
 class ViewsBasic extends Component {
     render() {
         return (

@@ -3,6 +3,8 @@ import {
     ScrollView, Image, StyleSheet, View, Text
   } from "react-native";
  
+//Docs: https://facebook.github.io/react-native/docs/using-a-scrollview
+
 export default class ScrollViewBasic extends Component {
 
      render(){

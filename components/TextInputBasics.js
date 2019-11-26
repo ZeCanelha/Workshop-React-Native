@@ -2,6 +2,9 @@ import React from 'react';
 import {Component} from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 
+
+// Docs: https://facebook.github.io/react-native/docs/textinput#content
+
 class TextInputBasics extends Component {
   constructor(props)
   {

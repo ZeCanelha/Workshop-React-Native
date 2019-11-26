@@ -2,6 +2,8 @@ import React from 'react';
 import {Component} from 'react';
 import { StyleSheet, Text, View, Picker, Image } from 'react-native';
 
+//Docs:  https://facebook.github.io/react-native/docs/picker
+
 
 export default class PickerBasics extends Component {
     constructor(props){
