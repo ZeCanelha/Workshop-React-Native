@@ -3,7 +3,7 @@
     "name": "React Native Tut",
     "slug": "react-native-tutorial",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
+    "sdkVersion": "34.0.0",
     "platforms": [
       "ios",
       "android",
