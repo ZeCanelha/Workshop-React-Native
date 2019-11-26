@@ -3,22 +3,15 @@ import {Component} from 'react';
 import { StyleSheet, Text, View, Picker, Image } from 'react-native';
 
 
-class PickerBasics extends Component {
+export default class PickerBasics extends Component {
     constructor(props){
-        this.state:{
-            favPet:''
-            }
+        super(props)
+        this.state = { favPet:'' }
     }
-    const styles = StyleSheet.create({
-        container: {
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center"
-        }
-    })
+
     render(){
         return(
-            <View>
+            <View style={styles.container}>
                 <Picker selectedValue={this.state.favPet}  >
                     <Picker.Item label = "Frog" value = "frog" />
                     <Picker.Item label = "Snail" value = "snail" />
@@ -28,5 +21,12 @@ class PickerBasics extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        marginTop: 100,
+        flex: 1
+    }
+})
 
 

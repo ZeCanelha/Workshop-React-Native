@@ -5,14 +5,16 @@ import ViewsBasic from './components/ViewsBasic'
 import TextInputBasics from './components/TextInputBasics'
 import ScrollViewBasic from "./components/ScrollViewBasic"
 import PickerBasics from "./components/PickerBasics"
+import ToDoList from './components/ToDoList'
 
 export default class App extends Component {
   render(){
      return (
        //<ViewsBasic />
        //<TextInputBasics />
-       <ScrollViewBasic />
+       //<ScrollViewBasic />
        //<PickerBasics />
+      <ToDoList />
     );
   }
 }

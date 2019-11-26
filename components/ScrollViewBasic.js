@@ -3,7 +3,7 @@ import {
     ScrollView, Image, StyleSheet, View, Text
   } from "react-native";
  
-class ScrollViewBasic extends Component {
+export default class ScrollViewBasic extends Component {
 
      render(){
          return(

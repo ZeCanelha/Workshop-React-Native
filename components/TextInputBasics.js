@@ -7,6 +7,7 @@ class TextInputBasics extends Component {
   {
     super(props)
     this.state = { text:''}
+    this.onChangeText = this.onChangeText.bind(this)
   }
 
   render(){
